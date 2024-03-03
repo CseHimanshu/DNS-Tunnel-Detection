@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+/*    background-image: url('wp10743760.jpg');*/
+}
+
+.container {
+    /*max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0.75; /* Adjust the opacity to make it brighter */
+
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0.2px);
+-webkit-backdrop-filter: blur(0.2px);
+border: 1px solid rgba(255, 255, 255, 0.73);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #ffff00;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #000000; /* Black table background */
+    color: #000000;
+}
+
+table.data th,
+table.data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: black; /* White text */
+    background-color: black;
+}
+
+table.data th {
+    background-color: black; /* Grey for table header */
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Predictions</h1>
+    <h3>Results</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Predictions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for table in tables %}
+                {{ table|safe }}
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
